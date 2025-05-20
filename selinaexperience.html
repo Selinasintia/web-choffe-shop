@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Selina Sintia Sari</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #fff;
+      color: #1e1e1e;
+    }
+
+    .main {
+      background-color: #f4f7dc;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 1rem;
+      transition: transform 0.5s ease;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 1rem;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .content ul {
+      padding-left: 1.2rem;
+      color: #444;
+    }
+
+    .content ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Selina Sintia Sari</div>
+    <nav>
+      <ul>
+      <li><a href="selinaaboutme.html" class="active">About Me</a></li>
+        <li><a href="selinaexperience.html" class="active">Experience</a></li>
+        <li><a href="selinaskill.html" class="active">Skill</a></li>
+        <li><a href="selinasertifikat.html" class="active">Certificate</a></li>
+        <li><a href="selinacontak.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="profile-img">
+      <img src="images/selina.jpg" alt="Foto Selina">
+    </div>
+    <div class="content">
+      <h1>Experience</h1>
+      <ul>
+        <li>Mengelola server dan database sederhana</li>
+        <li>Mempelajari pemrograman web dasar (HTML, CSS, JavaScript)</li>
+        <li>Membuat desain tampilan situs web sederhana</li>
+        <li>Mengembangkan situs web statis dan dinamis dengan PHP & MySQL</li>
+        <li>Menggunakan CMS seperti WordPress untuk membangun situs web</li>
+        <li>Menginstal sistem operasi dan perangkat lunak</li>
+        <li>Konfigurasi jaringan LAN dan WLAN</li>
+        <li>Konfigurasi jaringan dasar menggunakan proxy (Winbox, CLI)</li>
+        <li>Manajemen Bandwidth dan Firewall di Mikrotik</li>
+        <li>Praktik keamanan jaringan dasar (firewall, enkripsi)</li>
+        <li>Instalasi dan Konfigurasi Server Web (Apache, Nginx)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Hubungi kami:</strong> 0815-5745-8545</p>
+        <p><strong>Alamat:</strong> Jl. Penataran, Nglegok, Blitar, Jawa Timur</p>
+        <p><strong>Jam Buka:</strong> Setiap hari 16:00 - 00:00</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/COFFECANDI_" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram"/>
+        </a>
+        <a href="mailto:coffeecandipenataran@gmail.com">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email"/>
+        </a>
+      </div>
+      <p class="copyright">&copy; Coffee Candi. Sejak 2020.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

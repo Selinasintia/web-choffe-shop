@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selina Sintia Sari</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #fff;
+      color: #1e1e1e;
+    }
+
+    .section-skill {
+      background-color: #e9e9cb;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .section-skill h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #222;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .skill-layout {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .profile-photo {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      border: 6px solid #ff5252;
+      object-fit: cover;
+    }
+
+    .profile-photo img:hover {
+      transform: scale(1.08) rotate(2deg);
+    }
+
+    .skill-container {
+      flex: 2 1 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .skill-box {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    .skill-box img {
+      height: 32px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-box h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .skill-box ul {
+      font-size: 0.9rem;
+      padding-left: 1.1rem;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .skill-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Selina Sintia Sari</div>
+    <nav>
+      <ul>
+        <li><a href="selinaaboutme.html" class="active">About Me</a></li>
+        <li><a href="selinaexperience.html" class="active">Experience</a></li>
+        <li><a href="selinaskill.html" class="active">Skill</a></li>
+        <li><a href="selinasertifikat.html" class="active">Certificate</a></li>
+        <li><a href="selinacontak.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-skill">
+    <h2>Skill</h2>
+    <div class="skill-layout">
+      <div class="profile-photo">
+        <img src="images/selina.jpg" alt="Foto Selina">
+      </div>
+
+      <div class="skill-container">
+
+        <div class="skill-box">
+          <img src="images/mikrotik.jpg" alt="Mikrotik">
+          <h4>MikroTik</h4>
+          <ul>
+            <li>Pengenalan MikroTik RouterOS dan Winbox</li>
+            <li>Pengalamatan IP dasar dan subnetting</li>
+            <li>Konfigurasi Server dan Klien DHCP</li>
+            <li>NAT (Masquerade, Port Forwarding)</li>
+            <li>Pengaturan firewall dan keamanan</li>
+            <li>Manajemen bandwidth (Antrian, QoS)</li>
+            <li>Konfigurasi Nirkabel dan Hotspot</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/debian.png" alt="Debian">
+          <h4>Debian</h4>
+          <ul>
+            <li>Memasang dan mengonfigurasi Debian</li>
+            <li>Sistem berkas Linux dan perintah CLI dasar (ls, cd, rm, cp, mv)</li>
+            <li>Manajemen paket (apt, dpkg)</li>
+            <li>Manajemen user dan izin (chmod, chown, usermod)</li>
+            <li>Konfigurasi jaringan (IP statis, DHCP, SSH, firewall)</li>
+            <li>Manajemen proses dan layanan (systemctl, journalctl)</li>
+            <li>Penyiapan server web (Apache, Nginx)</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/google.png" alt="Google">
+          <h4>Google</h4>
+          <ul>
+            <li>Menggunakan Google Docs, Sheets, dan Slides untuk produktivitas</li>
+            <li>Manajemen email dengan Gmail (filter, label, autoresponder, add-on)</li>
+            <li>Mengatur jadwal dan kolaborasi dengan Google Calendar</li>
+            <li>Berbagi dan mengelola file di Google Drive</li>
+            <li>Membuat formulir dan survei dengan Google Forms</li>
+            <li>Menggunakan Google Meet untuk rapat online</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/html.png" alt="HTML">
+          <h4>HTML</h4>
+          <ul>
+            <li>Struktur dasar HTML</li>
+            <li>Judul, paragraf, dan format teks</li>
+            <li>Daftar (diurutkan dan tidak diurutkan)</li>
+            <li>Tautan dan navigasi</li>
+            <li>Gambar dan multimedia</li>
+            <li>Formulir dan validasi formulir</li>
+            <li>Tabel dan representasi data</li>
+            <li>HTML semantik</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/css.jpg" alt="CSS">
+          <h4>CSS</h4>
+          <ul>
+            <li>Pemilih CSS (Elemen, ID, Kelas, Atribut, Kombinasi)</li>
+            <li>Properti dasar (warna, tipografi, layout, tampilan)</li>
+            <li>Responsivitas & media query</li>
+            <li>Variabel CSS & properti kustom</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/javascript.jpg" alt="JavaScript">
+          <h4>JavaScript</h4>
+          <ul>
+            <li>Sintaks JavaScript dasar</li>
+            <li>Struktur kode dan deklarasi variabel</li>
+            <li>Operator dan tipe data</li>
+            <li>Fungsi dan aritmatika dasar</li>
+            <li>Deklarasi fungsi: <code>function namaFungsi() { }</code></li>
+            <li>Kontrol alur dan struktur perulangan</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hubungi Kami : 0815-5745-8545</p>
+    <p>Alamat : Jl. Penataran, Nglegok, Blitar, Jawa Timur</p>
+    <p>Jam Buka : Setiap Hari 16.00-00.00</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email" /></a>
+    </div>
+    <p>&copy; Coffee Candi. Sejak 2020.</p>
+  </footer>
+
+</body>
+</html>
